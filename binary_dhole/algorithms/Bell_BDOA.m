@@ -29,14 +29,14 @@ cuve_f(1)=Best_fitness;
 t=1; 
 while(t<=max_Iter)
     C = 1-(t/max_Iter); %Eq.(7)
-    PWN = round(rand*15+5); %Eq.(3)
+    PMN = round(rand*15+5); %Eq.(3)
     prey = (global_position+localBest_position)/2; %Eq.(5)
     prey_local = localBest_position;
         
     for i = 1:N
         
         if rand()<0.5
-            if PWN<10
+            if PMN<10
             %% Searching stage
               for j = 1:dim  
                 Xnew(i,:) = X(i,:)+C*rand.*(prey(j)-X(i,:)); %Eq.(6)
@@ -134,5 +134,6 @@ function y = p_obj(x)   %Eq.(4)
     D=rand;
     y = ((C1 / (1 + exp(-k * (PMN- mu))))^2)* D;
 end
+
 
 
