@@ -77,7 +77,7 @@ while(t<=max_Iter)
     Xnew(1,:);%%local
     for i = 1:N
         for j= 1:dim
-            Bell_shaped_transfer= abs(exp(-((Xnew(i,j))-1)^2)); %% Bell-shape, 1th function
+            Bell_shaped_transfer= abs(exp(-((Xnew(i,j))-1)^2)); %% Bell-shape, 1th function of the transfer functions 
             brandom=rand();
             if brandom > Bell_shaped_transfer
                 Sol(i,j)=~Sol(i,j);
@@ -133,6 +133,7 @@ function y = p_obj(x)   %Eq.(4)
     D=rand;
     y = ((C1 / (1 + exp(-k * (PMN- mu))))^2)* D;
 end
+
 
 
 
