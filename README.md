@@ -5,20 +5,29 @@ Keywords: metaheuristic, bell-shaped transfer functions, Dhole Optimization Algo
 
 <img width="1052" height="753" alt="image" src="https://github.com/user-attachments/assets/743fffe7-2d57-4004-985c-95a02181a9ed" />
 
-DOA Algorithm
+                DOA Algorithm
+
+
+
 
 
 <img width="813" height="414" alt="image" src="https://github.com/user-attachments/assets/3106cd0b-3a66-4bce-8659-900064b92a93" />
 
-Average accuracy of the transferred functions over all datasets
+      Average accuracy of the transferred functions over all datasets
+
+
+
 
 
 <img width="803" height="394" alt="image" src="https://github.com/user-attachments/assets/aa6794db-ab5e-4096-868a-3925f730e165" />
 
-Average fitness function of the transferred functions over all datasets
+    Average fitness function of the transferred functions over all datasets
+
+
+
 
 
 <img width="858" height="473" alt="image" src="https://github.com/user-attachments/assets/a15ee062-f830-479b-8168-6391dfe3fd73" />
 
-Average number of the chosen features of the transferred functions across all datasets
+    Average number of the chosen features of the transferred functions across all datasets
 
