@@ -8,24 +8,12 @@ thres = 0.5;
 fobj=@jFitnessFunction;
 dim= size(feat,2);
 cuve_f=zeros(1,N); 
-% X=zeros(N,dim); %Initialize population
 X=initialization(N,dim,ub,lb); %Initialize population
 Sol=zeros(N,dim);
 global_Cov = zeros(1,max_Iter);
 Best_fitness = inf;
 best_position = zeros(1,dim);
 fitness_f = zeros(1,N);
-
-% Initialize the population/solutions
-% for i=1:N
-%     for j=1:dim % For dimension
-%         if rand<=0.5
-%             Sol(i,j)=0;
-%         else
-%             Sol(i,j)=1;
-%         end
-%     end
-% end
 
 for i=1:N
    fitness_f(i) =  fobj(feat,label,(X(i,:) > thres),HO); %Calculate the fitness value of the function
@@ -146,4 +134,5 @@ function y = p_obj(x)   %Eq.(4)
     D=rand;
     y = ((C1 / (1 + exp(-k * (PMN- mu))))^2)* D;
 end
+
 
